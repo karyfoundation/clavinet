@@ -1,0 +1,28 @@
+{
+  "name": "clavinet",
+  "version": "0.0.2",
+  "description": "An independent \"Command Line Argument\" language based on the tokens received from process.argv",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmkary/clavinet.git"
+  },
+  "keywords": [
+    "argv"
+  ],
+  "author": "Kary Foundation, Inc.",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pmkary/clavinet/issues"
+  },
+  "homepage": "https://github.com/pmkary/clavinet#readme",
+  "dependencies": {
+    "chalk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0"
+  }
+}
