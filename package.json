@@ -4,7 +4,9 @@
   "description": "An independent \"Command Line Argument\" language based on the tokens received from process.argv",
   "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-parser": "node ./node_modules/pegjs/bin/pegjs -o ./bin/parser.js ./source/grammar.pegjs",
+    "compile-core": "tsc",
+    "build": "npm run compile-core && npm run compile-parser"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "chalk": "^2.3.0"
   },
   "devDependencies": {
-    "@types/chalk": "^2.2.0"
+    "@types/chalk": "^2.2.0",
+    "pegjs": "^0.10.0"
   }
 }
